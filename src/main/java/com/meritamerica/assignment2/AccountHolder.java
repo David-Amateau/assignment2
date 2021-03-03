@@ -1,19 +1,8 @@
 package com.meritamerica.assignment2;
 
-import java.util.Arrays;
-/*
- * This class will be used to create objects of type AccountHolder
- * and set and retrieve information about the AccountHolder.
- * It will also create for each AccountHolder a Checking Account and
- * a Savings Account object.
- */
-
 public class AccountHolder {
 	
-	/* 
-	 * 		Instance Variables
-	 */
-	
+	/*  		Instance Variables			*/
 	private String firstName;
 	private String middleName;
 	private String lastName;
@@ -21,9 +10,7 @@ public class AccountHolder {
 	private double checkingAccountOpeningBalance;
 	private double savingsAccountOpeningBalance;
 	
-	/*
-	 * 		Instance Objects
-	 */
+	/*  		Instance Objects			*/
 	private CheckingAccount checkingAccount;
 	private SavingsAccount savingsAccount;
 	
@@ -93,23 +80,28 @@ public class AccountHolder {
 	}
 	
 	// New Methods and ones that need to be modified
+	
+	
 	public CheckingAccount addCheckingAccount(double openingBalance) {
 		
 	}
 	
 	public CheckingAccount addCheckingAccount(CheckingAccount checkingAccount) {
 		
+		
 	}
 	
-	
+	// This method will return an array of the checking accounts of a an Account Holder
 	public CheckingAccount[] getCheckingAccounts() {
 		
 	}
 	
+	// This method will return the number of checking accounts an Account Holder has
 	public int getNumberOfCheckingAccounts() {
 		
 	}
 	
+	// This method will return the balance of an Account Holder's Checking Accounts
 	public double getCheckingBalance() {
 		
 	}
@@ -122,14 +114,17 @@ public class AccountHolder {
 		
 	}
 	
+	// This method will return an array of an Account Holder's Savings Accounts
 	public SavingsAccount[] getSavingsAccounts() {
 		
 	}
 	
+	// This method will return the number of Savings Accounts an Account Holder has
 	public int getNumberOfSavingsAccounts() {
 		
 	}
 	
+	// This method will return the balance of an Account Holder's Savings Accounts
 	public double getSavingsBalance() {
 		
 	}
@@ -142,24 +137,27 @@ public class AccountHolder {
 		
 	}
 	
+	// This method will returnn an array of an Account Holder's CD Accounts
 	public CDAccount[] getCDAccounts() {
 		
 	}
 	
+	// This method will return the number of CD Accounts an Account Holder has
 	public int getNumberOfCDAccounts() {
 		
 	}
 	
+	// This method will return the balance of an Account Holder's CD Accounts
 	public double getCDBalance() {
 		
 	}
 	
+	// This method will return the combined balance of all acounts of an Account Holder??
 	public double getCombinedBalance() {
 		
 	}
 	
 	// This method will print out all the information of an Account Holder
-	// All the Print Statements need quite a bit of work
 	@Override
 	public String toString() {
 		String accountHolderInfo = "Name: " + getFirstName() + " " + getMiddleName()

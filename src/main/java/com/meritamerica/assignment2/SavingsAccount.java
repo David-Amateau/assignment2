@@ -4,12 +4,12 @@ import java.text.DecimalFormat;
 
 public class SavingsAccount extends BankAccount {
 	
-	/* Instance Variables */
-	
+	/*  		Instance Variables			*/
 	private double savingsAccBalance = 0;
 	private double savingsInterestRate = 0.01;
 	private double savingsAccFutureValue;
 	
+	/*  		Formatting Objects			*/
 	DecimalFormat money = new DecimalFormat("0.00");
 	
 	// This constructor will set the opening balance of the Savings Account.

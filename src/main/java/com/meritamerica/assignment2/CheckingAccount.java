@@ -5,12 +5,12 @@ import java.text.DecimalFormat;
 public class CheckingAccount extends BankAccount {
 
 
-	/* Instance Variables */
-
+	/*  		Instance Variables			*/
 	private double checkingAccountBalance = 0;
 	private double checkingAccountInterestRate = 0.0001;
 	private double checkingAccountFutureValue;
 
+	/*  		Formatting Objects			*/
 	DecimalFormat money = new DecimalFormat("0.00");
 	DecimalFormat percentage = new DecimalFormat("0.0000");
 

@@ -1,28 +1,26 @@
 package com.meritamerica.assignment2;
 
 public class CDOffering {
-	/*
-	 * Instance Variables
-	 */
 	
-	private int term;
-	private double interestRate;
+	/*  		Instance Variables			*/
+	private int cdOfferingTerm;
+	private double cdOfferingInterestRate;
 	
 	
 	// This is the constructor for CDOffering
 	public CDOffering(int term, double interestRate) {
-		this.term = term;
-		this.interestRate = interestRate;
+		cdOfferingTerm = term;
+		cdOfferingInterestRate = interestRate;
 	}
 	
-	// This method will return the Term
+	// This method will return the Term of the CDOffering
 	public int getTerm() {
-		return term;
+		return cdOfferingTerm;
 	}
 	
-	// This method will return the Interest Rate
+	// This method will return the Interest Rate of the CDOffering
 	double getInterestRate() {
-		return interestRate;
+		return cdOfferingInterestRate;
 	}
 
 }
