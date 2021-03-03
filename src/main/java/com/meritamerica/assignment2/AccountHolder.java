@@ -92,14 +92,70 @@ public class AccountHolder {
 		this.ssn = ssn;
 	}
 	
-	// This method will return the Account Holder's Checking Account
-	public CheckingAccount getCheckingAccount() {
-		return checkingAccount;
+	// New Methods and ones that need to be modified
+	public CheckingAccount addCheckingAccount(double openingBalance) {
+		
 	}
 	
-	// This method will return the Account Holder's Savings Account
-	public SavingsAccount getSavingsAccount() {
-		return savingsAccount;
+	public CheckingAccount addCheckingAccount(CheckingAccount checkingAccount) {
+		
+	}
+	
+	
+	public CheckingAccount[] getCheckingAccounts() {
+		
+	}
+	
+	public int getNumberOfCheckingAccounts() {
+		
+	}
+	
+	public double getCheckingBalance() {
+		
+	}
+	
+	public SavingsAccount addSavingsAccount(double openingBalance) {
+		
+	}
+	
+	public SavingsAccount addSavingsAccount(SavingsAccount savingsAccount) {
+		
+	}
+	
+	public SavingsAccount[] getSavingsAccounts() {
+		
+	}
+	
+	public int getNumberOfSavingsAccounts() {
+		
+	}
+	
+	public double getSavingsBalance() {
+		
+	}
+	
+	public CDAccount addCDAccount(CDOffering offering, double openingBalance) {
+		
+	}
+	
+	public CDAccount addCDAccount(CDAccount cdAccount) {
+		
+	}
+	
+	public CDAccount[] getCDAccounts() {
+		
+	}
+	
+	public int getNumberOfCDAccounts() {
+		
+	}
+	
+	public double getCDBalance() {
+		
+	}
+	
+	public double getCombinedBalance() {
+		
 	}
 	
 	// This method will print out all the information of an Account Holder

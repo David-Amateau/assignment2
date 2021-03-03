@@ -2,7 +2,7 @@ package com.meritamerica.assignment2;
 
 import java.text.DecimalFormat;
 
-public class SavingsAccount{
+public class SavingsAccount extends BankAccount {
 	
 	/* Instance Variables */
 	
