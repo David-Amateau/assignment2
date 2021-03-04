@@ -11,6 +11,8 @@ public class CDAccount extends BankAccount {
 	private long cdAccountNumber;
 	private double cdAccountFutureValue;
 	// date for get date??????
+	//-R-
+	private Date date;
 	
 	
 	
@@ -35,7 +37,12 @@ public class CDAccount extends BankAccount {
 	}
 	
 	// This method will return the date the CD Account was created
-	java.util.Date getStartDate() {
+	//java.util.Date getStartDate() {
+	//-R-
+	public Date getStartDate() {
+		//-R-
+		return date;
+		
 		
 	}
 	
@@ -46,6 +53,8 @@ public class CDAccount extends BankAccount {
 	
 	// This method will calculate and return the Future Value of the CD
 	public double futureValue() {
+		//-R-
+		return cdAccountFutureValue;
 		
 	}
 }

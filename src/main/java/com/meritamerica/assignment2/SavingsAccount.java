@@ -15,6 +15,7 @@ public class SavingsAccount extends BankAccount {
 	// This constructor will set the opening balance of the Savings Account.
 	public SavingsAccount(double openingBalance){
 		savingsAccBalance = openingBalance;	
+		
 	}
 	
 	// This method will return the Savings Account balance

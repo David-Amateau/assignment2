@@ -19,7 +19,7 @@ public class CDOffering {
 	}
 	
 	// This method will return the Interest Rate of the CDOffering
-	double getInterestRate() {
+	public double getInterestRate() {
 		return cdOfferingInterestRate;
 	}
 
