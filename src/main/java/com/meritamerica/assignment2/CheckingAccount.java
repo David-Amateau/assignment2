@@ -1,3 +1,10 @@
+/*
+ * FileName: CheckingAccount.java
+ * 
+ * This class stores and creates Account Holders Checking Accounts
+ * 
+ */
+
 package com.meritamerica.assignment2;
 
 import java.text.DecimalFormat;
@@ -6,9 +13,9 @@ public class CheckingAccount extends BankAccount {
 
 
 	/*  		Instance Variables			*/
-	private double checkingAccountBalance = 0;
-	private double checkingAccountInterestRate = 0.0001;
-	private double checkingAccountFutureValue;
+	//private double checkingAccountBalance;
+	private static double checkingAccountInterestRate = 0.0001;
+	//private double checkingAccountFutureValue;
 
 	/*  		Formatting Objects			*/
 	DecimalFormat money = new DecimalFormat("0.00");
@@ -16,9 +23,16 @@ public class CheckingAccount extends BankAccount {
 
 	// This constructor will set the opening balance of the Checking Account
 	public CheckingAccount(double openingBalance) {
-		checkingAccountBalance = openingBalance;
+		// does this super constructor need to send an account number??
+		// or do we pass the first super constructor to the second and get the account number there
+		super(openingBalance, checkingAccountInterestRate);
 	}
 
+	/*
+	 * These methods can now be obtained using the super class BankAccount
+	 * 
+	 * 
+	 * 
 	// This method will return the Checking Account Balance
 	public double getBalance() {
 		return checkingAccountBalance;
@@ -59,7 +73,7 @@ public class CheckingAccount extends BankAccount {
 				(Math.pow(1 + checkingAccountInterestRate, years));
 		return checkingAccountFutureValue;
 	}
-
+	*/
 	@Override
 	public String toString() {
 		String checkingInfo = "\nChecking Account Balance: $" + money.format(getBalance()) + 

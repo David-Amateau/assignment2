@@ -1,5 +1,12 @@
-package com.meritamerica.assignment2;
+/*
+ * FileName: CDOffering.java
+ *
+ * This class can return the term and interest rate being offered for CD Accounts.
+ * 
+ */
 
+
+package com.meritamerica.assignment2;
 public class CDOffering {
 	
 	/*  		Instance Variables			*/

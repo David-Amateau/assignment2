@@ -1,3 +1,10 @@
+/*
+ * FileName: SavingsAccount.java
+ * 
+ * This class stores and creates Account Holders Savings Accounts
+ * 
+ */
+
 package com.meritamerica.assignment2;
 
 import java.text.DecimalFormat;
@@ -5,18 +12,23 @@ import java.text.DecimalFormat;
 public class SavingsAccount extends BankAccount {
 	
 	/*  		Instance Variables			*/
-	private double savingsAccBalance = 0;
-	private double savingsInterestRate = 0.01;
-	private double savingsAccFutureValue;
+	//private double savingsAccBalance = 0;
+	private static double savingsInterestRate = 0.01;
+	//private double savingsAccFutureValue;
 	
 	/*  		Formatting Objects			*/
 	DecimalFormat money = new DecimalFormat("0.00");
 	
 	// This constructor will set the opening balance of the Savings Account.
 	public SavingsAccount(double openingBalance){
-		savingsAccBalance = openingBalance;	
+		super(openingBalance, savingsInterestRate);
+		
 	}
 	
+	/*
+	 * 
+	 * These methods can now be obtained using the super class BankAccount
+	 * 
 	// This method will return the Savings Account balance
 	public double getBalance() {
 		return savingsAccBalance;	
@@ -57,7 +69,7 @@ public class SavingsAccount extends BankAccount {
 				(Math.pow(1 + savingsInterestRate, years));
 		return savingsAccFutureValue;	
 	}
-	
+	*/
 	@Override
 	public String toString() {
 		String savingsInfo = "\nSavings Account Balance: $" + money.format(getBalance()) + 
