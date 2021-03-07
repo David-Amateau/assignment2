@@ -3,6 +3,8 @@
  * 
  * This class stores and creates Account Holders Savings Accounts
  * 
+ * @author David Amateau & Ruby Garcia
+ * 
  */
 
 package com.meritamerica.assignment2;

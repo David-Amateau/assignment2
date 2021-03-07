@@ -3,6 +3,8 @@
  * 
  * This class stores information about Account Holders CD Accounts.
  * 
+ * @author David Amateau & Ruby Garcia
+ * 
  */
 
 package com.meritamerica.assignment2;
@@ -21,18 +23,13 @@ public class CDAccount extends BankAccount {
 	
 	/*			Instance Objects			*/
 	CDOffering cdOffering;
-	// date for get date??????
+	private Date date;
 	
 	// This is the constructor for CDAccount
 	public CDAccount(CDOffering offering, double balance) {
-		// I'm not sure about this super constructor
-		// need to trace its path and understand whats going on
-		// and what is coming in better
 		super(balance, offering.getInterestRate());
 		cdOffering = offering; // This contains the term and interest rate
-		// but how do i get it into a variable for the getInterestRate method
 		cdAccountBalance = balance;
-		// Do other things need to be in this constructor??
 	}
 	
 	// This method will return the balance
@@ -54,7 +51,8 @@ public class CDAccount extends BankAccount {
 	
 	// This method will return the date the CD Account was created
 	java.util.Date getStartDate() {
-		
+		// this currently returns null
+		return this.date;
 	}
 	
 	// This method will return the account number by getting it from its
@@ -65,10 +63,9 @@ public class CDAccount extends BankAccount {
 	}
 	
 	// This method will calculate and return the Future Value of the CD
-	// Is this method supposed to take in a parameter 'years' or is years
-	// determined by which cdOffering they choose
 	public double futureValue() {
-		cdAccountFutureValue = 
+		cdAccountFutureValue = cdAccountBalance *
+				(Math.pow(1 + cdAccountInterestRate, this.cdOffering.getTerm()));
 		return cdAccountFutureValue;
 	}
 }

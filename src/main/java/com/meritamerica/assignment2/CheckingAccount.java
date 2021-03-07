@@ -3,6 +3,8 @@
  * 
  * This class stores and creates Account Holders Checking Accounts
  * 
+ * @author David Amateau & Ruby Garcia
+ * 
  */
 
 package com.meritamerica.assignment2;
@@ -23,8 +25,7 @@ public class CheckingAccount extends BankAccount {
 
 	// This constructor will set the opening balance of the Checking Account
 	public CheckingAccount(double openingBalance) {
-		// does this super constructor need to send an account number??
-		// or do we pass the first super constructor to the second and get the account number there
+
 		super(openingBalance, checkingAccountInterestRate);
 	}
 
@@ -73,7 +74,7 @@ public class CheckingAccount extends BankAccount {
 				(Math.pow(1 + checkingAccountInterestRate, years));
 		return checkingAccountFutureValue;
 	}
-	*/
+	 */
 	@Override
 	public String toString() {
 		String checkingInfo = "\nChecking Account Balance: $" + money.format(getBalance()) + 

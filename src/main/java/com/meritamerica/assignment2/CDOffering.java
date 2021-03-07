@@ -3,6 +3,8 @@
  *
  * This class can return the term and interest rate being offered for CD Accounts.
  * 
+ * @author David Amateau & Ruby Garcia
+ * 
  */
 
 
